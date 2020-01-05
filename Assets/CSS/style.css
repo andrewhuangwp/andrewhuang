@@ -32,14 +32,14 @@ body {
   .sidenav h3 {
       color: white;
       text-align: center;
-      font-size: 24px;
+      font-size: 2vw;
       font-weight: 700;
   }
 
   .sidenav p {
       color: white;
       text-align: center;
-      width: 100%;
+      font-size: 1vw;
       margin-top: -5%;
       margin-bottom: 10%;
   }
