@@ -1,5 +1,8 @@
 body {
     font-family: "Lato", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   
   /* Sidebar Style */
@@ -13,6 +16,7 @@ body {
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
+    margin-bottom: 25%;
   }
 
   /* Sidebar Images*/
@@ -32,26 +36,26 @@ body {
   .sidenav h3 {
       color: white;
       text-align: center;
-      font-size: 2vw;
-      font-weight: 700;
+      font-size:32px;
+      margin-top: 10px;
   }
 
   .sidenav p {
       color: white;
       text-align: center;
-      font-size: 1vw;
-      margin-top: -5%;
+      font-size:16px;
+      margin-top: -10%;
       margin-bottom: 10%;
   }
   
   /* Sidebar Links */
 
   .sidenav a {
-    padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
+    padding: 6px 8px 6px 16px;
   }
 
   .sidenav a.current {
@@ -68,10 +72,26 @@ body {
     color: #f1f1f1;
   }
 
+
+
   .main {
-    margin-left: 20%; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
+    margin-left: 20%; 
+    font-size: 28px; 
+    padding: 0px 10px;   
+     
+  }
+
+  .main-body{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding: 5%;
+    background:rgba(255,255,255,0.7);
+    font-size: 2vmax;
+  }
+
+  .main-body h1 {
+    font-size: 3vmax;
   }
   
   @media screen and (max-height: 450px) {
