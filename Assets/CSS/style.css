@@ -103,6 +103,32 @@ body {
   .main-body h1 {
     font-size: 3vmax;
   }
+
+  /*Contact Content*/
+
+  dt,dd {
+    line-height:1.428571429;
+  } 
+  dt {
+    font-weight:700;
+  } 
+  dd a{
+    margin-left:0;
+    color: rgb(62, 118, 223);
+  } 
+  dl dt{
+    float:left;
+    width:160px;
+    clear:left;
+    text-align:left;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+  } 
+  dl dd:before {
+    margin-left:180px;
+  } 
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
