@@ -28,4 +28,8 @@ $(document).ready(function(){
             $('.sidenav a').css("font-size", "25px");
         }
     });
+    /* Transitions */
+    $("a").click(function(){
+        $("main-body").fadeOut("slow");
+      });
 });

@@ -3,6 +3,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
   }
   
   /* Sidebar Style */
@@ -88,6 +92,12 @@ body {
     padding: 5%;
     background:rgba(255,255,255,0.7);
     font-size: 2vmax;
+    
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+
+    
   }
 
   .main-body h1 {
@@ -98,3 +108,12 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
