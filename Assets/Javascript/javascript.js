@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(function () {
         if (window.location.pathname == '/andrewhuang/') {
             var pathname = window.location.pathname;
+        }
         else {
             var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
         }
