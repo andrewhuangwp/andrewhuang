@@ -1,12 +1,14 @@
 $(document).ready(function () {
     /* Highlight Current Page*/
     $(function () {
-        console.log(window.location.pathname);
-        var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
-        
-
+        if (window.location.pathname == '/andrewhuang/') {
+            var pathname = window.location.pathname;
+        else {
+            var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
+        }
+       console.log($(this).attr('href'));
         $('nav a').each(function () {
-            if ($(this).attr('href') == pathname || '') {
+            if ($(this).attr('href') == pathname) {
                 $(this).addClass('current');
             }
         });
