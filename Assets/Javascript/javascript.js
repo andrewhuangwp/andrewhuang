@@ -2,17 +2,18 @@ $(document).ready(function () {
     /* Highlight Current Page*/
     $(function () {
         if (window.location.pathname == '/andrewhuang/') {
-            var pathname = window.location.pathname;
+          $(this).addClass('current');      
         }
         else {
             var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
+            $('nav a').each(function () {
+            
+                if ($(this).attr('href') == pathname) {
+                    $(this).addClass('current');
+                }
+            });
         }
-       console.log($(this).attr('href'));
-        $('nav a').each(function () {
-            if ($(this).attr('href') == pathname) {
-                $(this).addClass('current');
-            }
-        });
+        
     });
     /* Determine font sizes of sidebar */
     $(function () {

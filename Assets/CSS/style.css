@@ -1,6 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
-  background-image: url("../../Images/index-bg.JPG");
+  background-image: url('../../Images/index-bg.JPG');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
