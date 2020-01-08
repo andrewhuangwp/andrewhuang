@@ -2,7 +2,7 @@ $(document).ready(function () {
     /* Highlight Current Page*/
     $(function () {
         if (window.location.pathname == '/andrewhuang/') {
-          $(this).addClass('current');      
+          $('#home-page').addClass('current');      
         }
         else {
             var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
