@@ -1,8 +1,9 @@
 $(document).ready(function () {
     /* Highlight Current Page*/
     $(function () {
+        console.log(window.location.pathname);
         var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
-        console.log(pathname);
+        
 
         $('nav a').each(function () {
             if ($(this).attr('href') == pathname || '') {
