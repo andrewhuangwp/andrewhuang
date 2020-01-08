@@ -1,35 +1,53 @@
-$(document).ready(function(){
+$(document).ready(function () {
     /* Highlight Current Page*/
-    $(function(){
+    $(function () {
         var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
 
-        $('.sidenav a').each(function() {
-        if ($(this).attr('href') == pathname)
-        {
-            $(this).addClass('current');
-        }
+        $('nav a').each(function () {
+            if ($(this).attr('href') == pathname) {
+                $(this).addClass('current');
+            }
+        });
+    });
+    /* Determine font sizes of sidebar */
+    $(function () {
+        updateNav();
+        $(window).resize(function () {
+            updateNav();
         });
     });
     /* Resize Texts based on Window size*/
-    $(window).resize(function() {
-        var h = $(window).height();
+    function updateNav() {
         var w = $(window).width();
-         
         /*Update sidebar to be horizontal if resized to a certain size*/
-        if((h/w)>0.61) {
-            $('.sidenav h3').css("font-size", "18px");
-            $('.sidenav p').css("font-size", "12px");
-            $('.sidenav a').css("font-size", "14px");
+        if (w < 750) {
+            $('nav h3').css("font-size", "18px");
+            $('nav p').css("font-size", "12px");
+            $('nav a').css("font-size", "14px");
         }
         /*Update sidebar to be vertical if resized to a certain size*/
-        if((h/w)<0.61) {
-            $('.sidenav h3').css("font-size", "32px");
-            $('.sidenav p').css("font-size", "16px");
-            $('.sidenav a').css("font-size", "25px");
+        if (w >= 750) {
+            $('nav h3').css("font-size", "32px");
+            $('nav p').css("font-size", "16px");
+            $('nav a').css("font-size", "25px");
         }
+    }
+    /* Determine size of resume*/
+    $(function () {
+        updateResume();
+        $(window).resize(function () {
+            updateResume();
+        });
     });
+    /* Change resume dimensions based on window dimensions*/
+    function updateResume() {
+        var resumeWidth = $(window).width();
+        var resumeHeight = $(window).height();
+        $('iframe').css("width", resumeWidth);
+        $('iframe').css("height", resumeHeight);
+    }
     /* Transitions */
-    $("a").click(function(){
+    $("a").click(function () {
         $("main-body").fadeOut("slow");
-      });
+    });
 });

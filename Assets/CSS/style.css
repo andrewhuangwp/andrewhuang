@@ -1,145 +1,230 @@
 body {
-    font-family: "Lato", sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  font-family: "Lato", sans-serif;
+  background-image: url('/Images/index-bg.JPG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
-    animation: fadeInAnimation ease 3s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+/* Sidebar Style */
+
+nav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-bottom: 25%;
+}
+
+/* Sidebar Images*/
+
+nav img {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.circle {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+/* Sidebar Headers */
+
+nav h3 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+nav p {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-top: -10%;
+  margin-bottom: 10%;
+}
+
+/* Sidebar Links */
+
+nav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  padding: 6px 8px 6px 16px;
+}
+
+nav a.current {
+  color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DFE7FA), to(#FFF));
+  padding: 2px 6px;
+}
+
+nav a.current:hover {
+  color: #979797;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 20%;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.main-body {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  padding: 5%;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 2vmax;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  font-size: 3vmax;
+  color: rgb(0, 140, 255);
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  margin-bottom: 3%;
+  height: 5px;
+  background: rgb(0, 140, 255);
+}
+
+.main-body em {
+  color: rgb(15, 88, 170);
+}
+
+/*Contact Content*/
+
+.contact-body {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  padding: 5%;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.5vmax;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.contact-body h1 {
+  font-size: 3vmax;
+  color: rgb(0, 140, 255);
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd a {
+  color: rgb(62, 118, 223);
+}
+
+dl dt {
+  float: left;
+  width: 20%;
+}
+
+dl dd {
+  padding-left: 25%;
+}
+
+/* Projects Contents */
+
+article {
+  display: inline-block;
+  width: 100%;
+}
+
+article .article-content{
+  float: left;
+  width: 56%;
+  padding-right: 2%;
+
+}
+
+article h2 {
+  background: rgb(62, 127, 201);
+  color: white;
+  font-size: 2.5vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2.5%;
+}
+article ul {
+  background: white;
+  font-size: 1.25vw;
+  margin-top: 0;
+}
+article li {
+  padding: 2%;
+}
+article img {
+  width: 40%;
+  float: right;
+  border: 2px solid black;
+}
+.article-media{
+  text-align: center;
+}
+
+button {
+  margin: 1%;
+  font-size: 2vw;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(74, 159, 255);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 .5vw rgb(100, 110, 143);
+}
+
+button:hover {
+  background-color: #3e6a8e
+}
+
+button:active {
+  background-color: rgb(76, 135, 175);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media screen and (max-height: 450px) {
+  nav {
+    padding-top: 15px;
   }
-  
-  /* Sidebar Style */
-  .sidenav {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-    margin-bottom: 25%;
+  nav a {
+    font-size: 18px;
   }
+}
 
-  /* Sidebar Images*/
-
-  .sidenav img {
-    width: 50%;
-    margin-left: 25%;
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
   }
-
-  .circle {
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 50%; 
+  100% {
+    opacity: 1;
   }
+}
 
-  /* Sidebar Headers */
-
-  .sidenav h3 {
-      color: white;
-      text-align: center;
-      font-size:32px;
-      margin-top: 10px;
-  }
-
-  .sidenav p {
-      color: white;
-      text-align: center;
-      font-size:16px;
-      margin-top: -10%;
-      margin-bottom: 10%;
-  }
-  
-  /* Sidebar Links */
-
-  .sidenav a {
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    padding: 6px 8px 6px 16px;
-  }
-
-  .sidenav a.current {
-    color: #000;
-    background: -webkit-gradient(linear, left top, left bottom, from(#DFE7FA), to(#FFF));
-    padding: 2px 6px;
-  }
-
-  .sidenav a.current:hover {
-    color: #979797;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-
-
-  .main {
-    margin-left: 20%; 
-    font-size: 28px; 
-    padding: 0px 10px;   
-     
-  }
-
-  .main-body{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    padding: 5%;
-    background:rgba(255,255,255,0.7);
-    font-size: 2vmax;
-    
-    animation: fadeInAnimation ease 3s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-
-    
-  }
-
-  .main-body h1 {
-    font-size: 3vmax;
-  }
-
-  /*Contact Content*/
-
-  dt,dd {
-    line-height:1.428571429;
-  } 
-  dt {
-    font-weight:700;
-  } 
-  dd a{
-    margin-left:0;
-    color: rgb(62, 118, 223);
-  } 
-  dl dt{
-    float:left;
-    width:160px;
-    clear:left;
-    text-align:left;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-
-  } 
-  dl dd:before {
-    margin-left:180px;
-  } 
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-  @keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-    } 
-} 

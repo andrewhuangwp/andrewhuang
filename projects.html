@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="icon" href="Images/profile-pic.png" type="image/icon type">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="Assets/CSS/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" href="Images/profile-pic.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<style>
-    body {
-      background-image: url('/Images/index-bg.JPG');
-    }
-</style>
+
 <body>
-<!--Sidebar Content-->
-<aside>
-    <div class="sidenav">
-        <img src="Images/profile-pic.png" class="circle">  
+    <!--Sidebar Content-->
+    <nav>
+        <img src="Images/profile-pic.png" class="circle">
         <h3>ANDREW HUANG</h3>
         <p>Computer Science Student <br />at Northeastern University</p>
         <a id="sidebar-page" href="index.html">Home</img>
-        <a id="sidebar-page" href="contact.html">Contact</a>
-        <a id="sidebar-page" href="projects.html">Projects</a>
-        <a id="sidebar-page" href="resume.html">Resume</a>
-      </div>
-</aside>
-<!--Main Content-->
-<div class="main">
-    <div class="main-body">
-        <h1>Hi! My name is Andrew Huang.</h1>
-        <p>I am a second year Computer Science student at Northeastern University and currently based in Boston. I am interested in software development, especially web development.</p>
-        <p class="status"> Status: <em>Searching for Co-op Opportunities for the Fall of 2020</em></p>
-    </div>
-</div>
+            <a id="sidebar-page" href="contact.html">Contact</a>
+            <a id="sidebar-page" href="projects.html">Projects</a>
+            <a id="sidebar-page" href="resume.html" target="_blank">Resume</a>
+    </nav>
 
-<!-- Scripts-->
-<script src="Assets/Javascript/javascript.js"></script>
+    <!--Main Content-->
+    <main class="main">
+        <section class="main-body">
+            <h1>Projects</h1>
+            <hr>
+            <article>
+                <div class="article-content">
+                    <h2>Personal Finance Database</h2>
+                    <ul>
+                        <li>Created a GUI application that allowed users to manage personal finance information</li>
+                        <li>The GUI was built using Java libraries such as Java Swing while the database was built using
+                            MySQL</li>
+                        <li>Implemented CRUD operations and other functionalities such as graphical visualization of
+                            users' data</li>
+                    </ul>
+                </div>
+                <div class="article-media">
+                    <img src="Images/personal_finance_proj.png">
+                    <button onclick="window.open(
+                        'https://github.com/andrewhuangwp/personal-finance-db',
+                        '_blank');" type="button">SOURCE CODE</button>
+                </div>
+            </article>
+        </section>
+        <main>
+
+            <!-- Scripts-->
+            <script src="Assets/Javascript/javascript.js"></script>
 </body>
-</html> 
+
+</html>
