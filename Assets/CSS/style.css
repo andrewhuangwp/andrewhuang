@@ -178,7 +178,7 @@ article ul {
 article li {
   padding: 2%;
 }
-article img {
+.article-media img {
   width: 40%;
   float: right;
   border: 2px solid black;
@@ -208,6 +208,26 @@ button:active {
   background-color: rgb(76, 135, 175);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+/* Interests Styles */
+h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 30px;
+}
+p {
+  margin-top: 0;
+}
+article img{
+  margin-left: 15%;
+  width: 70%;
+}
+.center-text {
+  font-size: 16px;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
 }
 
 @media screen and (max-height: 450px) {
