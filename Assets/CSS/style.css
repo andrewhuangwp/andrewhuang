@@ -1,98 +1,64 @@
 body {
-  font-family: "Lato", sans-serif;
-  background-image: url('../../Images/index-bg.JPG');
+  font-family: Arvo;
+  background-color: rgb(182, 214, 255);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  background-image: url('../../Images/index-bg.JPG');
 }
 
 /* Sidebar Style */
 
 nav {
-  height: 100%;
-  width: 20%;
-  position: fixed;
+  height: 10%;
+  width: 100%;
+  margin-top: 5%;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  margin-bottom: 25%;
-}
-
-/* Sidebar Images*/
-
-nav img {
-  width: 50%;
-  margin-left: 25%;
-}
-
-.circle {
-  border: 5px solid rgb(255, 255, 255);
-  border-radius: 50%;
-}
-
-/* Sidebar Headers */
-
-nav h3 {
-  color: white;
-  text-align: center;
-  font-size: 32px;
-  margin-top: 10px;
-}
-
-nav p {
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  margin-top: -10%;
-  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1vw;
+  border-bottom: 0.1vw solid rgb(174, 209, 255);
 }
 
 /* Sidebar Links */
 
 nav a {
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  padding: 6px 8px 6px 16px;
-}
-
-nav a.current {
-  color: #000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#DFE7FA), to(#FFF));
-  padding: 2px 6px;
+  color: #ffffff;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 nav a.current:hover {
-  color: #979797;
+  color: #56a1f8;
 }
 
 nav a:hover {
-  color: #f1f1f1;
+  color: #a0d1ff;
 }
 
+
 .main {
-  margin-left: 20%;
-  font-size: 28px;
-  padding: 0px 10px;
+  font-size: 2vmax;
 }
 
 .main-body {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 5%;
-  background: rgba(255, 255, 255, 0.7);
-  font-size: 2vmax;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 1.5v;
+  text-align: center;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  margin-bottom: 5%;
 }
 
 h1 {
@@ -100,12 +66,16 @@ h1 {
   color: rgb(0, 140, 255);
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 hr {
-  margin-bottom: 3%;
-  height: 5px;
-  background: rgb(0, 140, 255);
+  display: block;
+  height: 1vw;
+  border: 0;
+  border-top: 3px solid rgb(160, 198, 255);
+  margin: 1em 0;
+  padding: 0;
 }
 
 .main-body em {
@@ -113,19 +83,18 @@ hr {
 }
 
 article h3 {
-
   margin-bottom: 0;
-  color:  rgb(0, 140, 255);
+  color: rgb(0, 140, 255);
 }
 
 /*Contact Content*/
 
 .contact-body {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
   margin-top: 10%;
   padding: 5%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255);
   font-size: 1.5vmax;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
@@ -136,6 +105,7 @@ article h3 {
   font-size: 3vmax;
   color: rgb(0, 140, 255);
 }
+
 
 dt {
   font-weight: 700;
@@ -161,11 +131,16 @@ article {
   width: 100%;
 }
 
-article .article-content{
+article .description {
+  text-align: left;
+  font-size: 1.5vmax;
+  margin: 1vw;
+}
+
+article .article-content {
   float: left;
   width: 56%;
   padding-right: 2%;
-
 }
 
 article h2 {
@@ -176,20 +151,24 @@ article h2 {
   margin-bottom: 0;
   padding: 2.5%;
 }
+
 article ul {
   background: white;
   font-size: 1.25vw;
   margin-top: 0;
 }
+
 article li {
   padding: 2%;
 }
+
 .article-media img {
   width: 40%;
   float: right;
   border: 2px solid black;
 }
-.article-media{
+
+.article-media {
   text-align: center;
 }
 
@@ -217,24 +196,28 @@ button:active {
 }
 
 /* Interests Styles */
+
 h6 {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 30px;
 }
+
 p {
   margin-top: 0;
 }
-article img{
 
+article img {
   width: 70%;
 }
+
 .center-text {
   font-size: 16px;
   width: 70%;
   margin-left: 15%;
   text-align: center;
 }
+
 .center-img {
   margin-left: 15%;
 }
@@ -256,4 +239,3 @@ article img{
     opacity: 1;
   }
 }
-

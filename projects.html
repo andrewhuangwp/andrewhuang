@@ -5,19 +5,15 @@
     <link rel="icon" href="Images/profile-pic.png" type="image/icon type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <!--Sidebar Content-->
+    <!--Menu Content-->
     <nav>
-        <img src="Images/profile-pic.png" class="circle">
-        <h3>ANDREW HUANG</h3>
-        <p>Computer Science Student <br />at Northeastern University</p>
         <a id="home-page" href="index.html">Home</a>
-        <a id="sidebar-page" href="contact.html">Contact</a>
         <a id="sidebar-page" href="projects.html">Projects</a>
-        <a id="sidebar-page" href="interests.html">Interests</a>
         <a id="sidebar-page" href="resume.html" target="_blank">Resume</a>
     </nav>
 
@@ -29,19 +25,21 @@
             <article>
                 <div class="article-content">
                     <h2>Personal Finance Database</h2>
-                    <ul>
-                        <li>Created a GUI application that allowed users to manage personal finance information</li>
-                        <li>The GUI was built using Java libraries such as Java Swing while the database was built using
-                            MySQL</li>
-                        <li>Implemented CRUD operations and other functionalities such as graphical visualization of
-                            users' data</li>
-                    </ul>
+                    <div class="description">
+                    <p>Created an end to end GUI application that allowed users to manage personal finance information 
+                        such as assets and liabilities. The GUI was created using Java frameworks and libraries such as Java Swing
+                         while the database was built using MySQL. The application performed CRUD operations on the database and had 
+                          many functionalities such as providing graphical visualizations of the financial data.
+                    </p>
+                </div>
                 </div>
                 <div class="article-media">
                     <img src="Images/personal_finance_proj.png">
+                    <!--
                     <button onclick="window.open(
-                        'https://github.com/andrewhuangwp/personal-finance-db',
+                        '',
                         '_blank');" type="button">SOURCE CODE</button>
+                    -->
                 </div>
             </article>
         </section>
